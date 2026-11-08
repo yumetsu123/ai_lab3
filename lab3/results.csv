@@ -1,0 +1,16 @@
+section,name,metric,value,details
+3_minigpt,minigpt_v1,val_loss,3.2509,params=2856000; vocab=8000; ctx=64; layers=4; heads=4; best_iter=7999; minutes=5.3
+3_minigpt,minigpt_v2,val_loss,3.1681,params=2864192; vocab=8000; ctx=128; layers=4; heads=4; best_iter=7999; minutes=9.3
+3_minigpt,minigpt_v3,val_loss,3.1984,params=3251776; vocab=8000; ctx=64; layers=6; heads=4; best_iter=7500; minutes=7.4
+5_sentiment,"tabularisai-multiling (5cl) | базове: 3 класи, neutral=помилка",accuracy,0.95,F1=0.947; coverage=1.0; params_m=135.3; ms_per_20=155.6
+5_sentiment,tabularisai-multiling (5cl) | зміна 1: neutral ігноруємо (binary),accuracy,0.95,F1=0.947; coverage=1.0; params_m=135.3; ms_per_20=155.6
+5_sentiment,tabularisai-multiling (5cl) | зміна 2: 3 класи + поріг 0.7,accuracy,0.9,F1=0.9; coverage=0.95; params_m=135.3; ms_per_20=155.6
+5_sentiment,tabularisai-multiling (5cl) | зміна 3: 3 класи + поріг 0.9,accuracy,0.7,F1=0.667; coverage=0.7; params_m=135.3; ms_per_20=155.6
+5_sentiment,"xlm-r-base-twitter (3cl) | базове: 3 класи, neutral=помилка",accuracy,1.0,F1=1.0; coverage=1.0; params_m=278.0; ms_per_20=232.0
+5_sentiment,xlm-r-base-twitter (3cl) | зміна 1: neutral ігноруємо (binary),accuracy,1.0,F1=1.0; coverage=1.0; params_m=278.0; ms_per_20=232.0
+5_sentiment,xlm-r-base-twitter (3cl) | зміна 2: 3 класи + поріг 0.7,accuracy,1.0,F1=1.0; coverage=1.0; params_m=278.0; ms_per_20=232.0
+5_sentiment,xlm-r-base-twitter (3cl) | зміна 3: 3 класи + поріг 0.9,accuracy,0.35,F1=0.381; coverage=0.35; params_m=278.0; ms_per_20=232.0
+5_sentiment,"distilbert-multiling (3cl) | базове: 3 класи, neutral=помилка",accuracy,0.8,F1=0.8; coverage=0.9; params_m=135.3; ms_per_20=113.9
+5_sentiment,distilbert-multiling (3cl) | зміна 1: neutral ігноруємо (binary),accuracy,0.85,F1=0.842; coverage=1.0; params_m=135.3; ms_per_20=113.9
+5_sentiment,distilbert-multiling (3cl) | зміна 2: 3 класи + поріг 0.7,accuracy,0.4,F1=0.333; coverage=0.4; params_m=135.3; ms_per_20=113.9
+5_sentiment,distilbert-multiling (3cl) | зміна 3: 3 класи + поріг 0.9,accuracy,0.0,F1=0.0; coverage=0.0; params_m=135.3; ms_per_20=113.9
